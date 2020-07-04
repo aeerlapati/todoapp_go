@@ -1,8 +1,6 @@
 version 1:
   services:
-    web:
-      build: .
+    server:
+      build: ./main
       ports:
-        - "5000:5000"
-        
-
+        - "9199:9199"

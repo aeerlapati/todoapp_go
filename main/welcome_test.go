@@ -11,7 +11,7 @@ func TestCanary(t *testing.T) {
 		request, _ := http.NewRequest(http.MethodGet, "/canary", nil)
 		response := httptest.NewRecorder()
 
-		canary(response, request)
+		Canary(response, request)
 
 		got := response.Body.String()
 		want := "tweet"
